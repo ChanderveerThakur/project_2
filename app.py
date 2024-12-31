@@ -8,7 +8,8 @@ db_connection = mysql.connector.connect(
     user="root",
     password="root",
     host="localhost",
-    database="details"
+    database="details",
+    port= 3306
 )
 cursor = db_connection.cursor()
 cursor.execute('use details')
@@ -46,4 +47,5 @@ def submit_form():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=3306)
+

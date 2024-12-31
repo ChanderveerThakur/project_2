@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 # Establish database connection
 db_connection = mysql.connector.connect(
-    user="root",
-    password="root",
+    user="chanu",
+    password="password",
     host="localhost",
     database="details",
     port= 3306
@@ -47,5 +47,5 @@ def submit_form():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=3306)
+    app.run(debug=True, host='127.0.0.1', port=5001)
 
